@@ -30,13 +30,14 @@
         <main class="container ">
             <section class="row ">
                 <div id="cards" class="col-10 mx-auto d-flex flex-wrap my-5 ">
-                    <div class="card p-4 ">
-                        <img src="https://images-na.ssl-images-amazon.com/images/I/411BQR6BHRL.jpg" class="card-img-top img-fluid "
-                            alt="album">
+                    <div class="card p-4 " 
+                    v-for="(disk, index) in diskList" :key="index">
+                        <img :src="disk.poster" class="card-img-top img-fluid "
+                        :alt="disk.title">
                         <div class="card-body text-center mb-0 ">
-                            <h5>titolo</h5>
-                            <span class="text-secondary">artista</span>
-                            <h6 class="mt-3 mb-0 ">anno</h6>
+                            <h5>{{disk.title}}</h5>
+                            <span class="text-secondary">{{disk.author}}</span>
+                            <h6 class="mt-3 mb-0 ">{{disk.year}}</h6>
                         </div>
                     </div>
                 </div>
