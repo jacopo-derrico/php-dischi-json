@@ -10,12 +10,38 @@
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css'
         integrity='sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg=='
         crossorigin='anonymous' />
+    <!-- styel.css -->
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
 
     <div id="app">
-        <h1>{{ title }}</h1>
+        <header>
+            <nav class="navbar bg-body-tertiary">
+                <div class="container">
+                    <a class="navbar-brand" href="#">
+                        <img src="assets/img/logo-spotify.png" alt="spotify" width="50">
+                    </a>
+                </div>
+            </nav>
+        </header>
+
+        <main class="container ">
+            <section class="row ">
+                <div id="cards" class="col-10 mx-auto d-flex flex-wrap my-5 ">
+                    <div class="card p-4 ">
+                        <img src="https://images-na.ssl-images-amazon.com/images/I/411BQR6BHRL.jpg" class="card-img-top img-fluid "
+                            alt="album">
+                        <div class="card-body text-center mb-0 ">
+                            <h5>titolo</h5>
+                            <span class="text-secondary">artista</span>
+                            <h6 class="mt-3 mb-0 ">anno</h6>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
     </div>
 
     <!-- vue -->
@@ -29,7 +55,7 @@
         integrity='sha512-ykZ1QQr0Jy/4ZkvKuqWn4iF3lqPZyij9iRv6sGqLRdTPkY69YX6+7wvVGmsdBbiIfN/8OdsI7HABjvEok6ZopQ=='
         crossorigin='anonymous'></script>
     <!-- main.js -->
-    <script src="./js/main.js"></script>
+    <script src="./assets/js/main.js"></script>
 </body>
 
 </html>

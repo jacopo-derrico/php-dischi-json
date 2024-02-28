@@ -1,0 +1,11 @@
+#cards {
+    gap: 30px;
+}
+
+.card {
+    flex-basis: calc((100% / 3) - 30px - (30px / 3));
+}
+
+.card>img {
+    width: cover;
+}
