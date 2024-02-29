@@ -31,7 +31,7 @@
             <section class="row ">
                 <div id="cards" class="col-10 mx-auto d-flex flex-wrap my-5 ">
                     <div class="card p-4 " 
-                    v-for="(disk, index) in diskList" :key="index">
+                    v-for="(disk, index) in diskList" :key="disk.id">
                         <img :src="disk.poster" class="card-img-top img-fluid "
                         :alt="disk.title">
                         <div class="card-body text-center mb-0 ">
